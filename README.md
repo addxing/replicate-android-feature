@@ -24,6 +24,13 @@ git clone https://github.com/addxing/replicate-android-feature .dsh/skills/repli
 
 DSH hot-reloads the skills directory after cloning; the skill becomes available in new sessions.
 
+Or install it as an official bundle plugin in one line (requires pnpm; restart the web app afterwards):
+
+```bash
+dsh plugin --profile web add "github:addxing/replicate-android-feature#main"
+```
+
+
 ## Usage
 
 Ask your AI coding tool to apply the skill and identify the feature to reproduce:
