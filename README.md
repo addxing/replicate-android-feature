@@ -10,33 +10,14 @@ An agent skill for reproducing an existing Android feature in another project or
 npx skills add addxing/replicate-android-feature
 ```
 
-### DeepSeek Harness
-
-This repo follows the DeepSeek Harness (DSH) Skill format. Clone it into a skills directory and it will be auto-discovered:
-
-```bash
-# User-level install (available in all projects)
-git clone https://github.com/addxing/replicate-android-feature ~/.dsh/skills/replicate-android-feature
-
-# Project-level install (current project only)
-git clone https://github.com/addxing/replicate-android-feature .dsh/skills/replicate-android-feature
-```
-
-DSH hot-reloads the skills directory after cloning; the skill becomes available in new sessions.
-
-Or install it as an official bundle plugin in one line (requires pnpm; restart the web app afterwards):
-
-```bash
-dsh plugin --profile web add "github:addxing/replicate-android-feature#main"
-```
-
-
 ## Usage
+
+Select this skill using your tool’s skill mechanism, or ask for it by name. Invocation syntax and automatic activation depend on the tool.
 
 Ask your AI coding tool to apply the skill and identify the feature to reproduce:
 
 ```text
-Use $replicate-android-feature to reproduce the favorites feature from the Android source project in the target project.
+Use the replicate-android-feature skill to reproduce the favorites feature from the Android source project in the target project.
 ```
 
 Provide the source and target project locations when they cannot be inferred from the workspace.
